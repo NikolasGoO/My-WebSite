@@ -71,6 +71,8 @@ scrollLinks.forEach((link) => {
         const fixedNav = navbar.classList.contains("fixed-nav");
         let position = element.offsetTop - navHeight;
 
+        const containerHeight = linksContainer.getBoundingClientRect().height;
+
         if (!fixedNav) {
             position = position - navHeight;
         }
@@ -84,6 +86,7 @@ scrollLinks.forEach((link) => {
         });
     });
 });
+
 
 const updateCount = (el) => {
     const value = parseInt(el.dataset.value);
