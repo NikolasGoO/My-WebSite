@@ -238,7 +238,6 @@ main {
 nav {
   background: var(--clr-white);
   padding: 1rem 1.5rem;
-  padding-top: 70px;
 }
 
 .fixed-nav {
@@ -523,6 +522,7 @@ footer p {
   transition: transform 0.5s ease; 
   margin: 0; 
   padding: 0; 
+  height: 40vh;
   justify-content: center;
   max-width: 100%; 
 }
@@ -538,12 +538,9 @@ footer p {
   list-style: none;
   height: 120px;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 10vh;
   font-family: "Poppins", sans-serif;
   justify-content: center;
-  
-  
-  
 }
 
 .wrapper .icon {
@@ -634,11 +631,18 @@ footer p {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
 .wrapper .icon:hover .tooltip {
   top: -45px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  display: block;
 }
 
 .wrapper .icon:hover span,
@@ -685,17 +689,15 @@ footer p {
   animation: slide-in-top 0.3s both;
 }
 
-/* Animação de transição para links */
 .links-container {
   transition: height 0.3s ease-in-out;
 }
 
-/* Animação de rotação para o botão de navegação */
 .nav-toggle .fas {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Animação de escala para os ícones das redes sociais */
+
 .socialSvg {
   transition: transform 0.3s ease-in-out;
 }
